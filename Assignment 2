@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+main() 
+{
+    int n1,n2,i,count=0;
+    printf("Enter n1: ");
+    scanf("%d",&n1);
+    printf("Enter n2: ");
+    scanf("%d",&n2);
+      printf("Odd numbers in the range are (excluding 3rd odd number):\n");
+    for(i=n1;i<=n2;i++) 
+    {
+        if(i%2!=0) 
+        { 
+            count++;
+            if(count!=3) 
+            {
+                printf("%d ",i);
+            }
+        }
+    }
+}
